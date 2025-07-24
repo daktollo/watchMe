@@ -1,0 +1,19 @@
+{
+  "name": "watchme",
+  "version": "1.0.0",
+  "description": "watchMe is a video streaming platform that allows users to browse and purchase videos and films",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daktollo/watchMe.git"
+  },
+  "author": "daktollo <mevlutcanadiyanan@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daktollo/watchMe/issues"
+  },
+  "homepage": "https://github.com/daktollo/watchMe#readme"
+}
