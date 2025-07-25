@@ -23,4 +23,6 @@ user.checkout();
 
 db.insert("users", user);
 
+db.removeById("users", users[0].id);
+
 users.forEach(printUserPurchases);

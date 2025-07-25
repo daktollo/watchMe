@@ -14,8 +14,21 @@ const insert = (filename, object) => {
 	save(filename, objects);
 }
 
+const removeById = (filename, id) => {
+	const objects = load(filename);
+	const updatedObjects = objects.filter(obj => obj.id !== id);
+	save(filename, updatedObjects);
+}
+
+const findById = (filename, id) => {
+	const objects = load(filename);
+	return objects.find(obj => obj.id === id);
+}
+
 module.exports = {
 	save,
 	load,
-	insert
+	insert,
+	removeById,
+	findById
 };
