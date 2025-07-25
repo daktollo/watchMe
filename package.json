@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/daktollo/watchMe/issues"
   },
-  "homepage": "https://github.com/daktollo/watchMe#readme"
+  "homepage": "https://github.com/daktollo/watchMe#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "uuid": "^11.1.0"
+  }
 }
