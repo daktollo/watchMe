@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const save = (filename, objects) => {
-	fs.writeFileSync(`./${filename}.json`, JSON.stringify(objects));
+	fs.writeFileSync(`./${filename}.json`, JSON.stringify(objects, null, 2), 'utf8');
 }
 
 const load = (filename) => {
