@@ -8,7 +8,14 @@ const load = (filename) => {
 	return JSON.parse(fs.readFileSync(`./${filename}.json`, 'utf8'));
 }
 
+const insert = (filename, object) => {
+	const objects = load(filename);
+	objects.push(object);
+	save(filename, objects);
+}
+
 module.exports = {
 	save,
-	load
+	load,
+	insert
 };

@@ -10,16 +10,17 @@ function printUserPurchases(user) {
 	user.purchases.forEach(printMovieDetails);
 }
 
+const users = db.load("users");
+
 
 const movie = new Movie("Inception", "Christopher Nolan", 2010, 14.99);
 
-const user = new User("Alice", 30, "alice@example.com", "alicepassword");
+const user = new User("MC", 23, "mc@example.com", "mcpasword");
 
 user.cart.add(movie);
 user.checkout();
 
 
-db.save("users", [user]);
-const users = db.load("users");
+db.insert("users", user);
 
 users.forEach(printUserPurchases);
