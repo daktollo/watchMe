@@ -1,5 +1,5 @@
 function payment(user, amount) {
-    console.log(`Payment section: ${amount} TL will be charged to ${user.name}`);
+    console.log(`Payment section: ${amount}$ will be charged to ${user.name}`);
     return true; // Always successful
 }
 
