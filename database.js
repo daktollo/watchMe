@@ -5,7 +5,7 @@ const save = (filename, objects) => {
 }
 
 const load = (filename) => {
-	return JSON.parse(fs.readFileSync(`./${filename}`, 'utf8'));
+	return JSON.parse(fs.readFileSync(`./${filename}.json`, 'utf8'));
 }
 
 module.exports = {
