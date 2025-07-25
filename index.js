@@ -12,12 +12,11 @@ function printUserPurchases(user) {
 
 
 const movie = new Movie("Inception", "Christopher Nolan", 2010, 14.99);
-console.log(`Movie: ${movie.title}, Director: ${movie.director}, Year: ${movie.year}, Price: $${movie.price}`);
 
-const user = new User("Alice", 30, "alice@example.com");
-user.buyProduct(movie);
-console.log(`User: ${user.name}, Age: ${user.age}, Email: ${user.email}`);
+const user = new User("Alice", 30, "alice@example.com", "alicepassword");
 
+user.cart.add(movie);
+user.checkout();
 
 
 db.save("users", [user]);
