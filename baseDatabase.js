@@ -13,7 +13,8 @@ class BaseDatabase {
     if (!fs.existsSync(`./${this.filename}.json`)) {
       return [];
     }
-    return JSON.parse(fs.readFileSync(`./${this.filename}.json`, "utf8"));
+    const objects = JSON.parse(fs.readFileSync(`./${this.filename}.json`, "utf8"));
+    return objects.map(this.model.create);
   }
 
   insert(object) {
