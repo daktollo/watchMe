@@ -36,6 +36,20 @@ class User {
       return false;
     }
   }
+
+  static create(object) {
+    const newUser = new User(object.name, object.age, object.email, object.password);
+    if (!object.id || !object.password) {
+      throw new Error("ID and password are required to create a user.");
+    }
+    newUser.id = object.id;
+    newUser.purchases = object.purchases || [];
+    newUser.cart = object.cart || new Cart();
+    newUser.orders = object.orders || [];
+    newUser.password = object.password;
+
+    return newUser;
+  }
 }
 
 module.exports = User;
