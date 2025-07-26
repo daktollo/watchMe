@@ -10,6 +10,9 @@ class BaseDatabase {
   }
 
   load() {
+    if (!fs.existsSync(`./${this.filename}.json`)) {
+      return [];
+    }
     return JSON.parse(fs.readFileSync(`./${this.filename}.json`, "utf8"));
   }
 
