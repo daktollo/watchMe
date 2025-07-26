@@ -8,10 +8,9 @@ function printMovieDetails(movie) {
 function printUserPurchases(user) {
   user.purchases.forEach(printMovieDetails);
 }
-const userDB = new UserDatabase();
-userDB.save([]); // Initialize the database with an empty array
+// UserDatabase.save([]); // Initialize the database with an empty array
 
-const users = userDB.load();
+const users = UserDatabase.load();
 
 const movie = new Movie("Inception", "Christopher Nolan", 2010, 14.99);
 
@@ -20,8 +19,8 @@ const user = new User("MC", 23, "mc@example.com", "mcpasword");
 user.cart.add(movie);
 user.checkout();
 
-userDB.insert(user);
+UserDatabase.insert(user);
 
-userDB.removeById(users[0].id);
+// UserDatabase.removeById(users[0].id);
 
 users.forEach(printUserPurchases);
