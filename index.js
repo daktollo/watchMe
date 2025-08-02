@@ -1,6 +1,6 @@
 const Movie = require("./movie");
 const User = require("./user");
-const UserDatabase = require("./userDatabase");
+const UserDatabase = require("./user-database");
 function printMovieDetails(movie) {
   console.log(`Title: ${movie.title}, Director: ${movie.director}, Year: ${movie.year}, Price: $${movie.price}`);
 }

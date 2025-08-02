@@ -1,6 +1,6 @@
 const { v4: uuidv4 } = require("uuid");
 const Cart = require("./cart");
-const { hashPassword } = require("./passwordHelper");
+const { hashPassword } = require("./password-helper");
 const payment = require("./payment");
 const Order = require("./order");
 

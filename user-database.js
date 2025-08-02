@@ -1,4 +1,4 @@
-const BaseDatabase = require("./baseDatabase");
+const BaseDatabase = require("./base-database");
 const User = require("./user");
 
 class UserDatabase extends BaseDatabase {
