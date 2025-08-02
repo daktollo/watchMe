@@ -38,6 +38,7 @@ class User {
   }
 
   static create(object) {
+    // Create a new User instance from an object. For example, when loading from the database.
     const newUser = new User(object.name, object.age, object.email, object.password);
     if (!object.id || !object.password) {
       throw new Error("ID and password are required to create a user.");
