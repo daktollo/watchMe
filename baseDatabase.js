@@ -33,6 +33,18 @@ class BaseDatabase {
     const objects = this.load();
     return objects.find((obj) => obj.id === id);
   }
+
+  update(object) {
+    const objects = this.load();
+    const index = objects.findIndex(obj => obj.id == object.id);
+
+    if (index === -1) {
+      throw new Error(`Object with id ${object.id} not found.`);
+    }
+
+    objects.splice(index, 1, object);
+    this.save(objects);
+  }
 }
 
 module.exports = BaseDatabase;
