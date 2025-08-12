@@ -1,0 +1,138 @@
+[
+  {
+    "id": "8aa54a94-76e9-4f8f-b64e-18e433d5dda3",
+    "name": "MC",
+    "age": 23,
+    "email": "mc@example.com",
+    "password": "$2b$12$v3kk1PCCCnhikqylmEHgmO7rZ9Av14ni6sGTr2tblWTzFOpaNerUK",
+    "purchases": [
+      {
+        "title": "Inception",
+        "director": "Christopher Nolan",
+        "year": 2010,
+        "price": 14.99
+      }
+    ],
+    "cart": {
+      "items": []
+    },
+    "orders": [
+      {
+        "userId": "8aa54a94-76e9-4f8f-b64e-18e433d5dda3",
+        "items": [
+          {
+            "title": "Inception",
+            "director": "Christopher Nolan",
+            "year": 2010,
+            "price": 14.99
+          }
+        ],
+        "total": 14.99,
+        "date": "2025-07-26T08:12:20.423Z",
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "id": "531b1193-49d7-4527-bab1-67d1141c1075",
+    "name": "MC",
+    "age": 23,
+    "email": "mc@example.com",
+    "password": "$2b$12$d1xgeqfh.XJ0BGdqu0CyB./X8gjIGHorUi4bzcy0fN8qcREOpIuxW",
+    "purchases": [
+      {
+        "title": "Inception",
+        "director": "Christopher Nolan",
+        "year": 2010,
+        "price": 14.99
+      }
+    ],
+    "cart": {
+      "items": []
+    },
+    "orders": [
+      {
+        "userId": "531b1193-49d7-4527-bab1-67d1141c1075",
+        "items": [
+          {
+            "title": "Inception",
+            "director": "Christopher Nolan",
+            "year": 2010,
+            "price": 14.99
+          }
+        ],
+        "total": 14.99,
+        "date": "2025-07-26T08:37:00.966Z",
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "id": "92b86ba5-8cdf-4ba6-a2cf-98317fd01bc3",
+    "name": "MC",
+    "age": 23,
+    "email": "mc@example.com",
+    "password": "$2b$12$FJ9D4haxZsS7LQwXoy6I9OgLx61nyomwUVx6vcF6av.VlgwD4aFQy",
+    "purchases": [
+      {
+        "title": "Inception",
+        "director": "Christopher Nolan",
+        "year": 2010,
+        "price": 14.99
+      }
+    ],
+    "cart": {
+      "items": []
+    },
+    "orders": [
+      {
+        "userId": "92b86ba5-8cdf-4ba6-a2cf-98317fd01bc3",
+        "items": [
+          {
+            "title": "Inception",
+            "director": "Christopher Nolan",
+            "year": 2010,
+            "price": 14.99
+          }
+        ],
+        "total": 14.99,
+        "date": "2025-08-03T14:30:08.426Z",
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "id": "b072fb8c-236d-4091-bf65-683d2864ef89",
+    "name": "MC",
+    "age": 23,
+    "email": "mc@example.com",
+    "password": "$2b$12$jEmEZWSV0VjE2pJwOFQ5XObgqYHK.L3LnE3Bky800IQUDsqgzwaOi",
+    "purchases": [
+      {
+        "title": "Inception",
+        "director": "Christopher Nolan",
+        "year": 2010,
+        "price": 14.99
+      }
+    ],
+    "cart": {
+      "items": []
+    },
+    "orders": [
+      {
+        "userId": "b072fb8c-236d-4091-bf65-683d2864ef89",
+        "items": [
+          {
+            "title": "Inception",
+            "director": "Christopher Nolan",
+            "year": 2010,
+            "price": 14.99
+          }
+        ],
+        "total": 14.99,
+        "date": "2025-08-03T14:31:14.307Z",
+        "status": "completed"
+      }
+    ]
+  }
+]
